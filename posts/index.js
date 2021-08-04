@@ -1,9 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const { randomBytes } = require("crypto");
+const cors = require("cors");
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 
 //posts object will hold our info for the session, no DB for this small project
 //any changes to this file will clear this object
