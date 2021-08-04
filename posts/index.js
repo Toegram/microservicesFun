@@ -6,6 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 //posts object will hold our info for the session, no DB for this small project
+//any changes to this file will clear this object
 const posts = {};
 
 //GET
